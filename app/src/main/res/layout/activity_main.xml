@@ -62,6 +62,7 @@
                 android:backgroundTint="@color/green"
                 android:src="@drawable/publicacion"
                 app:layout_anchor="@+id/bottomAppBar"
+                app:menu="@menu/publication_menu"
 
                 app:maxImageSize="40dp" />
 

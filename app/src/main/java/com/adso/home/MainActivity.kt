@@ -3,6 +3,7 @@ package com.adso.home
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -48,12 +49,32 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fragmentManager = supportFragmentManager
         openFragment(HomeFragment())
 
-        binding.fab.setOnClickListener {
-            Toast.makeText(this,"categorias", Toast.LENGTH_SHORT).show()
-        }
+       binding.fab.setOnClickListener {
+           val popup = PopupMenu(this,it)
+           menuInflater.inflate(R.menu.publication_menu,popup.menu)
+
+           popup.show()
+           popup.setOnMenuItemClickListener(::manageItemClick)
+       }
 
 
     }
+
+    private  fun manageItemClick(menuItem: MenuItem): Boolean {
+        return when (menuItem?.itemId){
+            R.id.ajustes -> {
+                Toast.makeText(this, "copiar", Toast.LENGTH_SHORT).show()
+                true
+            }
+
+            R.id.opc1 -> {
+                Toast.makeText(this, "copiar", Toast.LENGTH_SHORT).show()
+                true
+            }
+            else -> false
+        }
+    }
+
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
@@ -77,6 +98,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onBackPressed()
 
     }
+
+
 
 
 
