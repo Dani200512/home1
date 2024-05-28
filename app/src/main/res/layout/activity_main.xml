@@ -63,7 +63,7 @@
                 android:src="@drawable/publicacion"
                 app:layout_anchor="@+id/bottomAppBar"
                 app:menu="@menu/publication_menu"
-
+                android:title="Publication"
                 app:maxImageSize="40dp" />
 
 

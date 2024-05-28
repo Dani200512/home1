@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#20A98A</color>
+
+    <color name="colorButtonPressed">#CCCCCC</color> <!-- Cambia el color según desees -->
+    <color name="colorButtonNormal">#FFFFFF</color>
+    <color name="colorButtonText">#FF000000</color>
 </resources>

@@ -78,12 +78,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.nav_ajustes -> openFragment(AjustesFragment())
             R.id.nav_opc1 -> openFragment(Opc1Fragment())
             R.id.nav_opc2 -> openFragment(Opc2Fragment())
-            R.id.nav_opc3 -> Toast.makeText(this,"opc3",Toast.LENGTH_SHORT).show()
-            R.id.nav_opc4 -> Toast.makeText(this,"opc4",Toast.LENGTH_SHORT).show()
-            R.id.nav_opc5 -> Toast.makeText(this,"opc5",Toast.LENGTH_SHORT).show()
+            R.id.nav_opc3 -> openFragment(Opc3Fragment())
+            R.id.nav_opc4 -> openFragment(Opc4Fragment())
+            R.id.nav_opc5 -> openFragment(Opc5Fragment())
         }
       binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
@@ -100,9 +99,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
 
-
-
-
+    @SuppressLint("SuspiciousIndentation")
     private  fun openFragment(fragment: Fragment){
       val   fragmentTransaction: FragmentTransaction  = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragment_container,fragment)
