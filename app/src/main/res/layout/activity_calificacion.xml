@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
-
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -20,12 +22,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            <ImageView
-                android:padding="5dp"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/configuraciones"
-                android:layout_width="44dp"
-                android:layout_height="44dp"/>
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/configuraciones"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"/>
 
             </RelativeLayout>
             <LinearLayout
@@ -35,7 +37,6 @@
                 android:layout_height="wrap_content">
 
             </LinearLayout>
-
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_marginTop="10dp"
@@ -71,7 +72,6 @@
         android:layout_height="wrap_content"
         layout="@layout/item_image"
         />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -79,11 +79,13 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <include layout="@layout/item_add"/>
-
+            <include layout="@layout/calificacion_add"/>
+            <include layout="@layout/calificacion2_add"/>
+            <include layout="@layout/calificacion3_add"/>
 
         </LinearLayout>
     </ScrollView>
 
 
-        </LinearLayout>
+
+</LinearLayout>

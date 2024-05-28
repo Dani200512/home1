@@ -7,4 +7,5 @@
     <color name="colorButtonPressed">#CCCCCC</color> <!-- Cambia el color según desees -->
     <color name="colorButtonNormal">#FFFFFF</color>
     <color name="colorButtonText">#FF000000</color>
+    <color name="gray">#CCCCCC</color>
 </resources>

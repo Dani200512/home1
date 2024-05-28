@@ -26,7 +26,7 @@
             android:id="@+id/profileImage"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/usuario"
+            android:src="@drawable/yo"
             android:scaleType="centerCrop"
             android:layout_marginEnd="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Daniela"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:textStyle="bold"/>
     </LinearLayout>
 
@@ -46,26 +46,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Post Content"
-            android:textSize="18sp" />
+            android:text="Implementaremos DialogFragment en una aplicación de Android del mundo real. Crearemos un nuevo proyecto; si ya está trabajando en algún proyecto antiguo y desea implementar un fragmento de diálogo en ese proyecto, también puede hacerlo."
+            android:textSize="15sp" />
 
         <ImageView
             android:id="@+id/postImage"
             android:layout_width="match_parent"
-            android:layout_height="216dp"
+            android:layout_height="112dp"
             android:layout_marginBottom="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/galeria" />
+            android:src="@drawable/galeria"
+            />
+
 
         <TextView
             android:id="@+id/likeCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:text="0 Likes"
-            android:textSize="14sp"
-            android:layout_marginBottom="8dp"/>
-
-
+            android:textSize="14sp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -80,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Like"
+                android:textSize="9sp"
                 android:drawableTop="@drawable/like2"
                 android:drawablePadding="4dp"
                 android:gravity="center"/>
@@ -87,21 +88,23 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/commentButton"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Comment"
                 android:drawableTop="@drawable/comente"
                 android:drawablePadding="4dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="Comm"
+                android:textSize="10sp"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/shareButton"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="0dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Share"
+                android:text="Compa"
+                android:textSize="10sp"
                 android:drawableTop="@drawable/compartir"
                 android:drawablePadding="4dp"
                 android:gravity="center" />
